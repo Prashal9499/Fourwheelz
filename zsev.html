@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZS EV - FourWheelz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="cars\carstyle.css">
+</head>
+
+<body>
+<div class="header">
+  <h1>MG ZS EV</h1>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="cars\mg\zsev\one.webp" style="width:100%">
+  <div class="text" style="color:grey"></div>
+</div></div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="cars\mg\zsev\two.webp" style="width:100%">
+  <div class="text" style="color:grey"></div>
+</div></div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="cars\mg\zsev\three.webp" style="width:100%">
+      <div class="text" style="color:grey"></div>
+    </div></div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="cars\mg\zsev\four.webp" style="width:100%">
+          <div class="text" style="color:grey"></div>
+        </div></div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="cars\mg\zsev\five.webp" style="width:100%">
+              <div class="text" style="color:grey"></div>
+            </div></div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+
+<div class="specs">
+    <h1>Specifications -</h1>
+  </div>
+
+  <table>
+    <tr>
+      <th>Engine and Transmission</th>
+      <th>Fuel & Performance</th>
+      <th>Suspension, Steering & Brakes</th>
+      <th>Dimensions & Capacity</th>
+    </tr>
+    <tr>
+      <td><b>Motor Type - </b> Three Phase Permanent Magnet Synchronous Motor </td>
+      <td><b>Fuel Type - </b>  Electric</td>
+      <td><b>Front Suspension - </b> MacPherson Strut</td>
+      <td><b>Length (mm) - </b>4314 </td>
+    </tr>
+    <tr>
+      <td style="color:#00FF3C" ><b>Fast Charging - </b> &#10004;</td>
+      <td><b>Emission Norm Compliance - </b>  ZEV</td>
+      <td><b>Rear Suspension - </b> Torsion Beam </td>
+      <td><b> Width (mm) - </b>1809</td>
+    </tr>
+    <tr>
+      <td><b>Charging time - </b> 6-8hours </td>
+      <td><b>Top Speed (Kmph) - </b>  140</td>
+      <td><b>Steering Type - </b> Power </td>
+      <td><b> Height (mm) - </b>1620</td>
+    </tr>
+    <tr>
+      <td><b>Battery Capacity - </b>44.5kwh</td>
+      <td></td>
+      <td><b>Steering Column - </b> Tilt  </td>
+      <td><b>No of Doors - </b> 4 </td>
+    </tr>
+    <tr>
+      <td><b>Max Power (bhp@rpm) - </b> 140.8bhp@3500rpm</td>
+      <td></td>
+      <td><b> Steering Gear Type - </b> Rack & Pinion </td>
+      <td><b>Seating Capacity - </b> 5 </td>
+    </tr>
+    <tr>
+      <td><b>Max Torque (nm@rpm) - </b> 353Nm@5000rpm</td>
+      <td></td>
+      <td><b>Rear Brake Type - </b> Disc </td>
+      <td><b>Wheel Base (mm) - </b>2585 </td>
+    </tr>
+    <tr>
+        <td style="color:#FF0000"><b>Turbo Charger - </b>  &#10006;</td>
+        <td></td>
+        <td><b>Front Brake Type - </b>Disc </td>
+        <td><b>Boot Space (Litres) - </b>470 </td>
+      </tr>
+      <tr>
+        <td style="color:#FF0000"><b>Super Charge - </b> &#10006;</td>
+        <td></td>
+        <td><b>Acceleration - </b> 8.5s</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>TransmissionType - </b> Auto</td>
+        <td></td>
+        <td><b></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Gear Box - </b>Single Speed Reduction Gear</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+  </table>
+<a href="contactdealer.html"><button class="button">Contact Dealer &#9742;</button></a>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GT-R - FourWheelz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="cars\carstyle.css">
+</head>
+
+<body>
+<div class="header">
+  <h1>Nissan GT-R</h1>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="cars\nissan\gtr\one.webp" style="width:100%">
+  <div class="text" style="color:grey"></div>
+</div></div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="cars\nissan\gtr\two.webp" style="width:100%">
+  <div class="text" style="color:grey"></div>
+</div></div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="cars\nissan\gtr\three.webp" style="width:100%">
+      <div class="text" style="color:grey"></div>
+    </div></div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="cars\nissan\gtr\four.webp" style="width:100%">
+          <div class="text" style="color:grey"></div>
+        </div></div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="cars\nissan\gtr\five.webp" style="width:100%">
+              <div class="text" style="color:grey"></div>
+            </div></div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+
+<div class="specs">
+    <h1>Specifications -</h1>
+  </div>
+
+<table>
+    <tr>
+      <th>Engine and Transmission</th>
+      <th>Fuel & Performance</th>
+      <th>Suspension, Steering & Brakes</th>
+      <th>Dimensions & Capacity</th>
+    </tr>
+    <tr>
+      <td><b>Engine Type - </b>V6 Twin Turbo Petrol Engine</td>
+      <td><b>Fuel Type - </b> Petrol</td>
+      <td><b>Front Suspension - </b> Double Wishbone </td>
+      <td><b>Length (mm) - </b>4710 </td>
+    </tr>
+    <tr>
+      <td><b>Displacement(cc) - </b>3798</td>
+      <td><b>Mileage (ARAI) - </b>  9.0</td>
+      <td><b>Rear Suspension - </b> Multi Link</td>
+      <td><b> Width (mm) - </b> 1895</td>
+    </tr>
+    <tr>
+      <td><b>Max Power(bhp@rpm) - </b>562bhp@6800rpm</td>
+      <td><b>Fuel Tank Capacity (Litres) - </b>  74</td>
+      <td><b>Steering Type - </b> Power </td>
+      <td><b> Height (mm) - </b> 1370</td>
+    </tr>
+    <tr>
+      <td><b>Max Torque(nm@rpm) - </b> 637Nm@3300-5800rpm</td>
+      <td><b>Emission Norm Compliance - </b> BS IV</td>
+      <td><b>Steering Column - </b> Tilt </td>
+      <td><b> Boot Space (Litres) - </b>315 </td>
+    </tr>
+    <tr>
+      <td><b>No. of cylinder - </b> 6</td>
+      <td></td>
+      <td><b> Steering Gear Type - </b> Rack & Pinion </td>
+      <td><b>Seating Capacity - </b> 4 </td>
+    </tr>
+    <tr>
+      <td><b>Valves Per Cylinder - </b> 4</td>
+      <td></td>
+      <td><b>Turning Radius (Metres) - </b> 5.57 metres </td>
+      <td><b>No of Doors - </b> 2 </td>
+    </tr>
+    <tr>
+        <td><b>Valve Configuration - </b> DOHC</td>
+        <td></td>
+        <td><b>Front Brake Type - </b>Ventilated Disc </td>
+        <td><b>Wheel Base (mm) - </b> 270 </td>
+      </tr>
+      <tr>
+        <td><b>Fuel Supply System - </b> MPFI</td>
+        <td></td>
+        <td><b>Rear Brake Type - </b> Ventilated Disc </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Drive Type - </b> FWD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td style="color:#00FF3C"><b>Turbo Charger - </b>  &#10004;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td style="color:#FF0000"><b>Super Charge - </b> &#10006;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>TransmissionType - </b> Automatic</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Gear Box - </b> 6 Speed</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Bore X Stroke - </b> 86 x 86 mm</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+  </table>
+  <a href="contactdealer.html"><button class="button">Contact Dealer &#9742;</button></a>
+</body>
+
+</html>

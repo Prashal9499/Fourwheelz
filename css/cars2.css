@@ -1,0 +1,20 @@
+/* brand navbar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  display: all;
+  color: #3A3B3C;
+  text-align: center;
+  padding: 110px 110px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: rgb(20, 20, 20);
+  color: #79767E;
+}

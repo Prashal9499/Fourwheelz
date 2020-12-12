@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>A8 - FourWheelz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="cars\carstyle.css">
+</head>
+
+<body>
+<div class="header">
+  <h1>Audi A8</h1>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="cars\audi\a8\one.webp" style="width:100%">
+  <div class="text" style="color:grey"></div>
+</div></div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="cars\audi\a8\two.webp" style="width:100%">
+  <div class="text" style="color:grey"></div>
+</div></div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="cars\audi\a8\three.webp" style="width:100%">
+      <div class="text" style="color:grey"></div>
+    </div></div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="cars\audi\a8\four.webp" style="width:100%">
+          <div class="text" style="color:grey"></div>
+        </div></div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="cars\audi\a8\five.webp" style="width:100%">
+              <div class="text" style="color:grey"></div>
+            </div></div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+
+<div class="specs">
+    <h1>Specifications -</h1>
+  </div>
+
+  <table>
+    <tr>
+      <th>Engine and Transmission</th>
+      <th>Fuel & Performance</th>
+      <th>Suspension, Steering & Brakes</th>
+      <th>Dimensions & Capacity</th>
+    </tr>
+    <tr>
+      <td><b>Engine Type - </b>V6 petrol engine</td>
+      <td><b>Fuel Type - </b> Petrol </td>
+      <td><b>Front Suspension - </b>Air Suspension</td>
+      <td><b>Length (mm) - </b>5302 </td>
+    </tr>
+    <tr>
+      <td><b>Displacement(cc) - </b>2995</td>
+      <td><b>Mileage (ARAI) - </b>15.26</td>
+      <td><b>Rear Suspension - </b>Air Suspension</td>
+      <td><b> Width (mm) - </b>1945</td>
+    </tr>
+    <tr>
+      <td><b>Max Power(bhp@rpm) - </b>335.2@5000–6400</td>
+      <td><b>Fuel Tank Capacity (Litres) - </b>  72</td>
+      <td><b>Steering Type - </b> Electric </td>
+      <td><b> Height (mm) - </b>1485</td>
+    </tr>
+    <tr>
+      <td><b>Max Torque(nm@rpm) - </b>500nm@1370–4500</td>
+      <td><b>Emission Norm Compliance - </b>BS VI</td>
+      <td><b>Steering Column - </b>Tilt & Telescopic</td>
+      <td><b> Kerb Weight (Kg) - </b>2030 </td>
+    </tr>
+    <tr>
+      <td><b>No. of cylinder - </b> 5</td>
+      <td><b>Top Speed (Kmph) - </b>233</td>
+      <td><b> Steering Gear Type - </b> Rack & Pinion </td>
+      <td><b>Seating Capacity - </b> 5 </td>
+    </tr>
+    <tr>
+      <td><b>Valves Per Cylinder - </b> 4</td>
+      <td></td>
+      <td><b>Rear Brake Type - </b> Disc </td>
+      <td><b>Wheel Base (mm) - </b>3127 </td>
+    </tr>
+    <tr>
+        <td><b>Valve Configuration - </b> DOHC</td>
+        <td></td>
+        <td><b>Front Brake Type - </b>Disc </td>
+        <td><b>No of Doors - </b> 4 </td>
+      </tr>
+      <tr>
+      <td><b>Fuel Supply System - </b>TFSI</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Drive Type - </b> AWD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td style="color:#00FF3C"><b>Turbo Charger - </b>  &#10004;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td style="color:#FF0000"><b>Super Charge - </b> &#10006;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>TransmissionType - </b> Automatic </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Gear Box - </b> 8 Speed</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+  </table>
+<a href="contactdealer.html"><button class="button">Contact Dealer &#9742;</button></a>
+
+</body>
+
+</html>
